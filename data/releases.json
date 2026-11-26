@@ -30,24 +30,10 @@
     "text": "아니스"
   },
   {
-
     "thumbnail": "https://via.placeholder.com/64",
     "release": "2022-11-04",
     "category": "OUTPOST",
     "text": "엘리베이터 괴담"
-  },
-  {
-
-    "thumbnail": "https://via.placeholder.com/64",
-    "release": "2022-11-10",
-    "category": "EVENT",
-    "text": "NO CALLER ID"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
-    "release": "2022-11-10",
-    "category": "BOND",
-    "text": "헬름"
   },
   {
     "thumbnail": "https://via.placeholder.com/64",
@@ -56,7 +42,6 @@
     "text": "감각"
   },
   {
-
     "thumbnail": "https://via.placeholder.com/64",
     "release": "2022-11-04",
     "category": "CHAPTER.04",
@@ -164,5 +149,17 @@
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 VI"
+  },
+  {
+    "thumbnail": "https://via.placeholder.com/64",
+    "release": "2022-11-10",
+    "category": "EVENT",
+    "text": "NO CALLER ID"
+  },
+  {
+    "thumbnail": "https://via.placeholder.com/64",
+    "release": "2022-11-10",
+    "category": "BOND",
+    "text": "헬름"
   }
 ]
