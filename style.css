@@ -1,0 +1,118 @@
+.grid {
+  display: grid;
+  /* Automatically fits as many panes as possible, minimum 260px wide */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px; /* Space between panes */
+  padding: 16px;
+  font-family: sans-serif;
+}
+    
+.pane {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  border: 1px solid transparent;
+  background-color: #1f2f4c;
+  background-repeat: no-repeat;
+
+  /* Order:
+     1. Inner fill (full size)
+     2–9. Eight 8px corner segments (8px x 1px or 1px x 8px)
+     10. Base border (full size)
+  */
+  background-image:
+    linear-gradient(#1f2f4c, #1f2f4c),                      /* Inner bg      */
+    linear-gradient(to right, #608fd0, #608fd0),            /* TL horizontal */
+    linear-gradient(to bottom, #608fd0, #608fd0),           /* TL vertical   */
+    linear-gradient(to left, #608fd0, #608fd0),             /* TR horizontal */
+    linear-gradient(to bottom, #608fd0, #608fd0),           /* TR vertical   */
+    linear-gradient(to right, #608fd0, #608fd0),            /* BL horizontal */
+    linear-gradient(to top, #608fd0, #608fd0),              /* BL vertical   */
+    linear-gradient(to left, #608fd0, #608fd0),             /* BR horizontal */
+    linear-gradient(to top, #608fd0, #608fd0),              /* BR vertical   */
+    linear-gradient(#3f6394, #3f6394);                      /* Base border   */
+
+  /* Layer 1 clipped to padding-box; layers 2–10 clipped to border-box */
+  background-clip:
+    padding-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box;
+
+  /* Layer 1 positioned relative to padding-box; layers 2–10 relative to border-box */
+  background-origin:
+    padding-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box, border-box,
+    border-box;
+
+  background-size:
+    100% 100%,
+    8px 1px, 1px 8px,
+    8px 1px, 1px 8px,
+    8px 1px, 1px 8px,
+    8px 1px, 1px 8px,
+    100% 100%;
+
+  background-position:
+    0 0,
+    0 0, 0 0,
+    100% 0, 100% 0,
+    0 100%, 0 100%,
+    100% 100%, 100% 100%,
+    0 0;
+}
+
+.pane-thumbnail {
+  width: 64px;
+    height: 64px;
+    margin: 8px;
+    flex-shrink: 0;
+    object-fit: cover;
+    background-color: transparent; /* Let the pane's #1f2f4c show through the faded edge */
+  
+    /* 62x62 center is fully visible (black/opaque in mask); outer ~1px fades out */
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0px, #000 1px, #000 calc(100% - 1px), transparent 100%),
+      linear-gradient(to bottom, transparent 0px, #000 1px, #000 calc(100% - 1px), transparent 100%);
+    -webkit-mask-composite: source-in;
+  
+    mask-image:
+      linear-gradient(to right, transparent 0px, #000 1px, #000 calc(100% - 1px), transparent 100%),
+      linear-gradient(to bottom, transparent 0px, #000 1px, #000 calc(100% - 1px), transparent 100%);
+    mask-composite: intersect;
+}
+
+.pane-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;                /* spacing between lines */
+  margin-left: 8px;
+}
+
+.pane-release {
+  font-size: 9px;
+  color: #ccc;
+  font-family: monospace;
+}
+
+.pane-category {
+  font-size: 10pt;
+  color: #fff;
+  font-family: "Antonio", sans-serif;
+  line-height: 1.6;
+}
+
+.pane-text {
+  font-size: 14pt;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
