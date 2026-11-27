@@ -1,165 +1,153 @@
 [
   {
-    "thumbnail": "https://via.placeholder.com/64",
+    "thumbnail": "images/chapter-00.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.00",
     "text": "추락"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-01.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.01",
     "text": "침식"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-02.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.02",
     "text": "인식"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/nikke-rapi.webp",
     "release": "2022-11-04",
     "category": "BOND",
     "text": "라피"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/nikke-anis.webp",
     "release": "2022-11-04",
     "category": "BOND",
     "text": "아니스"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/outpost-elevator.webp",
     "release": "2022-11-04",
     "category": "OUTPOST",
     "text": "엘리베이터 괴담"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-03.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.03",
     "text": "감각"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-04.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.04",
-    "text": "천화"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+    "text": "헌화"
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 I-II"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-05.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.05",
     "text": "환상"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 III"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-06.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.06",
     "text": "순례"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 IV"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-07.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.07",
     "text": "재회"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 V"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-08.webp",
     "release": "2022-11-04",
-    "category": "022-11-04",
     "category": "CHAPTER.08",
     "text": "갈등"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-09.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.09",
     "text": "비밀"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-10.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.10",
     "text": "동료"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-11.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.11",
     "text": "최강"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-12.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.12",
     "text": "고향"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-13.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.13",
     "text": "회귀"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-14.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.14",
     "text": "여행"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-15.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.15",
     "text": "행운"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/chapter-16.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.16",
     "text": "낙인"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
     "release": "2022-11-04",
     "category": "BLABLA",
     "text": "랩칠리언의 의뢰 VI"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/event-no-caller-id.webp",
     "release": "2022-11-10",
     "category": "EVENT",
     "text": "NO CALLER ID"
-  },
-  {
-    "thumbnail": "https://via.placeholder.com/64",
+  }, {
+    "thumbnail": "images/nikke-helm.webp",
     "release": "2022-11-10",
     "category": "BOND",
     "text": "헬름"
+  }, {
+    "thumbnail": "images/chapter-17.webp",
+    "release": "2022-11-24",
+    "category": "CHAPTER.17",
+    "text": "지표"
+  }, {
+    "thumbnail": "images/blabla-raptilion.webp",
+    "release": "2022-11-24",
+    "category": "BLABLA",
+    "text": "랩칠리언의 의뢰 VII"
+  }, {
+    "thumbnail": "images/chapter-18.webp",
+    "release": "2022-11-24",
+    "category": "CHAPTER.18",
+    "text": "영웅"
   }
 ]
