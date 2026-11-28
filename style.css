@@ -28,8 +28,8 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  /* One card per row (--row from app.js), column by category. */
-  .pane          { grid-row: var(--row); }
+  /* One row per card/separator (--row from app.js), column by category. */
+  .pane, .date-sep { grid-row: var(--row); }
   .pane--event   { grid-column: 1; }
   .pane--chapter { grid-column: 2; }
   .pane--other   { grid-column: 3; }
@@ -120,15 +120,39 @@ body {
 .pane-meta {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: stretch;
+  padding: 8px 0;          /* line up with the thumbnail's top/bottom edges */
   gap: 2px;                /* spacing between lines */
   margin-left: 8px;
 }
 
-.pane-release {
+.pane-comment {
+  margin-top: auto;
   font-size: 9px;
   color: #ccc;
+  font-family: sans-serif;
+}
+
+.date-sep {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  font-size: 9px;
   font-family: monospace;
+  color: #3f6394;
+}
+
+.date-sep::after {
+  content: "";
+  flex: 1;
+  margin-left: 8px;
+  height: 1px;
+  /* Bright 8px tip on the right, matching the pane corners. */
+  background: linear-gradient(to left, #608fd0 8px, #3f6394 8px);
+}
+
+.date-sep-year {
+  color: #608fd0;
 }
 
 .pane-category {

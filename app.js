@@ -5,6 +5,20 @@ function laneOf(category = "") {
   return "other";
 }
 
+// "2022-11-04" -> <span>2022</span>-11-04, followed by a rule (CSS).
+function dateSeparator(release, row) {
+  const sep = document.createElement("div");
+  sep.className = "date-sep";
+  sep.style.setProperty("--row", row);
+
+  const [year, ...rest] = release.split("-");
+  const yearEl = document.createElement("span");
+  yearEl.className = "date-sep-year";
+  yearEl.textContent = year;
+  sep.append(yearEl, rest.length ? `-${rest.join("-")}` : "");
+  return sep;
+}
+
 async function renderReleases() {
   const grid = document.querySelector(".grid");
   if (!grid) return;
@@ -17,11 +31,18 @@ async function renderReleases() {
 
     const releases = await response.json();
     const fragment = document.createDocumentFragment();
+    let row = 0;
+    let lastRelease = null;
 
-    releases.forEach((item, index) => {
+    for (const item of releases) {
+      if (item.release && item.release !== lastRelease) {
+        fragment.appendChild(dateSeparator(item.release, ++row));
+        lastRelease = item.release;
+      }
+
       const pane = document.createElement("div");
       pane.className = `pane colored-corners pane--${laneOf(item.category)}`;
-      pane.style.setProperty("--row", index + 1);
+      pane.style.setProperty("--row", ++row);
 
       const img = document.createElement("img");
       img.className = "pane-thumbnail";
@@ -32,10 +53,6 @@ async function renderReleases() {
       const meta = document.createElement("div");
       meta.className = "pane-meta";
 
-      const releaseEl = document.createElement("div");
-      releaseEl.className = "pane-release";
-      releaseEl.textContent = item.release ?? "";
-
       const categoryEl = document.createElement("div");
       categoryEl.className = "pane-category";
       categoryEl.textContent = item.category ?? "";
@@ -44,10 +61,18 @@ async function renderReleases() {
       textEl.className = "pane-text";
       textEl.textContent = item.text ?? "";
 
-      meta.append(releaseEl, categoryEl, textEl);
+      meta.append(categoryEl, textEl);
+
+      if (item.comment) {
+        const commentEl = document.createElement("div");
+        commentEl.className = "pane-comment";
+        commentEl.textContent = item.comment;
+        meta.append(commentEl);
+      }
+
       pane.append(img, meta);
       fragment.appendChild(pane);
-    });
+    }
 
     grid.replaceChildren(fragment);
   } catch (err) {

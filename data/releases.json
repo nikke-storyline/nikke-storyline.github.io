@@ -3,17 +3,20 @@
     "thumbnail": "images/chapter-00.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.00",
-    "text": "추락"
+    "text": "추락",
+    "comment": "#마리안"
   }, {
     "thumbnail": "images/chapter-01.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.01",
-    "text": "침식"
+    "text": "침식",
+    "comment": "#카운터스 #마리안"
   }, {
     "thumbnail": "images/chapter-02.webp",
     "release": "2022-11-04",
     "category": "CHAPTER.02",
-    "text": "인식"
+    "text": "인식",
+    "comment": "#카운터스"
   }, {
     "thumbnail": "images/nikke-rapi.webp",
     "release": "2022-11-04",
