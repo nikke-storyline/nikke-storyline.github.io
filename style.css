@@ -38,6 +38,12 @@ body {
   .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  /* Timeline view: one card per row (--row set in app.js), column by category. */
+  .pane          { grid-row: var(--row); }
+  .pane--event   { grid-column: 1; }
+  .pane--chapter { grid-column: 2; }
+  .pane--other   { grid-column: 3; }
 }
     
 .pane {

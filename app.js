@@ -1,3 +1,11 @@
+// Which column a card belongs to in the 3-column layout:
+// 1st = EVENT, 2nd = CHAPTER.xx, 3rd = everything else (BOND, BLABLA, OUTPOST, ...).
+function laneOf(category = "") {
+  if (category === "EVENT") return "event";
+  if (category.startsWith("CHAPTER")) return "chapter";
+  return "other";
+}
+
 async function renderReleases() {
   const grid = document.querySelector(".grid");
   if (!grid) return;
@@ -11,9 +19,11 @@ async function renderReleases() {
     const releases = await response.json();
     const fragment = document.createDocumentFragment();
 
-    for (const item of releases) {
+    releases.forEach((item, index) => {
       const pane = document.createElement("div");
-      pane.className = "pane colored-corners";
+      pane.className = `pane colored-corners pane--${laneOf(item.category)}`;
+      // One card per row in the 3-column layout (see style.css).
+      pane.style.setProperty("--row", index + 1);
 
       const img = document.createElement("img");
       img.className = "pane-thumbnail";
@@ -39,7 +49,7 @@ async function renderReleases() {
       meta.append(releaseEl, categoryEl, textEl);
       pane.append(img, meta);
       fragment.appendChild(pane);
-    }
+    });
 
     grid.replaceChildren(fragment);
   } catch (err) {
