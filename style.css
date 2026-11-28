@@ -1,12 +1,9 @@
-/* Set on <html>, not <body>: containment on body (below) stops body's
-   background from propagating to the whole canvas. */
+/* Not on body: body's containment stops background propagation to the canvas. */
 html {
   background-color: #0f1829;
 }
 
 body {
-  /* Lets the grid pick its column count from the space it actually has
-     (e.g. still correct once a side panel takes part of the width). */
   container-type: inline-size;
 }
 
@@ -15,31 +12,23 @@ body {
   color: #fff;
 }
 
-/*
- * Layout: exactly 1 column, or exactly 3 columns (never 2, never 4+).
- * Derived from the previous auto-fill behavior (260px min pane, 10px gap):
- *   3 columns fit at  3*260 + 2*10 =  800px of content width
- *   4 columns fit at  4*260 + 3*10 = 1070px of content width
- * So 3 columns kick in at 800px, and the grid is capped at 1070px
- * (each pane maxes out at (1070 - 2*10) / 3 = 350px).
- * The grid is left-aligned (no auto margins).
- */
+/* 1 or 3 columns only: 3 need 3*260+2*10 = 800px; capped where 4 would fit (4*260+3*10). */
 .grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 10px; /* Space between panes */
   padding: 16px;
-  max-width: 1070px; /* content-box: excludes the 16px padding */
+  max-width: 1070px;
   font-family: sans-serif;
 }
 
-/* 800px content + 2 * 16px padding = 832px */
+/* 800px + 2*16px padding */
 @container (min-width: 832px) {
   .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  /* Timeline view: one card per row (--row set in app.js), column by category. */
+  /* One card per row (--row from app.js), column by category. */
   .pane          { grid-row: var(--row); }
   .pane--event   { grid-column: 1; }
   .pane--chapter { grid-column: 2; }

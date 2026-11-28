@@ -1,5 +1,4 @@
-// Which column a card belongs to in the 3-column layout:
-// 1st = EVENT, 2nd = CHAPTER.xx, 3rd = everything else (BOND, BLABLA, OUTPOST, ...).
+// 3-column lanes: EVENT | CHAPTER.xx | everything else.
 function laneOf(category = "") {
   if (category === "EVENT") return "event";
   if (category.startsWith("CHAPTER")) return "chapter";
@@ -22,7 +21,6 @@ async function renderReleases() {
     releases.forEach((item, index) => {
       const pane = document.createElement("div");
       pane.className = `pane colored-corners pane--${laneOf(item.category)}`;
-      // One card per row in the 3-column layout (see style.css).
       pane.style.setProperty("--row", index + 1);
 
       const img = document.createElement("img");
@@ -58,5 +56,4 @@ async function renderReleases() {
   }
 }
 
-// Script is loaded with `defer`, so the DOM is already parsed at this point.
 renderReleases();
