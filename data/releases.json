@@ -21,12 +21,14 @@
     "thumbnail": "images/nikke-rapi.webp",
     "release": "2022-11-04",
     "category": "BOND",
-    "text": "라피"
+    "text": "라피",
+    "comment": "#카운터스"
   }, {
     "thumbnail": "images/nikke-anis.webp",
     "release": "2022-11-04",
     "category": "BOND",
-    "text": "아니스"
+    "text": "아니스",
+    "comment": "#카운터스"
   }, {
     "thumbnail": "images/outpost-elevator.webp",
     "release": "2022-11-04",
@@ -176,7 +178,8 @@
     "thumbnail": "images/nikke-helm.webp",
     "release": "2022-11-10",
     "category": "BOND",
-    "text": "헬름"
+    "text": "헬름",
+    "comment": "#이지스"
   }, {
     "thumbnail": "images/chapter-17.webp",
     "release": "2022-11-24",
@@ -204,7 +207,8 @@
     "thumbnail": "images/nikke-laplace.webp",
     "release": "2022-11-24",
     "category": "BOND",
-    "text": "라플라스"
+    "text": "라플라스",
+    "comment": "#메티스"
   }, {
     "thumbnail": "images/event-miracle-snow.webp",
     "release": "2022-12-08",
@@ -229,11 +233,61 @@
     "thumbnail": "images/event-brand-new-year.webp",
     "release": "2022-12-29",
     "category": "EVENT",
-    "text": "BRAND NEW YEAR"
+    "text": "BRAND NEW YEAR",
+    "comment": "#이지스"
   }, {
     "thumbnail": "images/nikke-modernia.webp",
     "release": "2022-12-29",
     "category": "BOND",
-    "text": "모더니아"
+    "text": "모더니아",
+    "comment": "#마리안"
+  }, {
+    "thumbnail": "images/chapter-19.webp",
+    "release": "2023-01-12",
+    "category": "CHAPTER.19",
+    "text": "낙원",
+    "comment": "#카운터스 #에덴"
+  }, {
+    "thumbnail": "images/chapter-20.webp",
+    "release": "2023-01-12",
+    "category": "CHAPTER.20",
+    "text": "화룡",
+    "comment": "#카운터스 #에덴 #랩쳐퀸"
+  }, {
+    "thumbnail": "images/nikke-guilty.webp",
+    "release": "2023-01-12",
+    "category": "BOND",
+    "text": "길티",
+    "comment": "#리얼카인드니스"
+  }, {
+    "thumbnail": "images/nikke-sin.webp",
+    "release": "2023-01-12",
+    "category": "BOND",
+    "text": "신",
+    "comment": "#리얼카인드니스"
+  }, {
+    "thumbnail": "images/nikke-quency.webp",
+    "release": "2023-01-12",
+    "category": "BOND",
+    "text": "퀀시",
+    "comment": "#리얼카인드니스"
+  }, {
+    "thumbnail": "images/event-d-outsiders.webp",
+    "release": "2023-01-12",
+    "category": "EVENT",
+    "text": "D-OUTSIDERS",
+    "comment": "#이그조틱"
+  }, {
+    "thumbnail": "images/nikke-viper.webp",
+    "release": "2023-01-12",
+    "category": "BOND",
+    "text": "바이퍼",
+    "comment": "#이그조틱"
+  }, {
+    "thumbnail": "images/nikke-jackal.webp",
+    "release": "2023-01-12",
+    "category": "BOND",
+    "text": "자칼",
+    "comment": "#이그조틱"
   }
 ]
