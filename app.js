@@ -44,8 +44,9 @@ async function renderReleases() {
     grid.replaceChildren(fragment);
   } catch (err) {
     console.error(err);
-    grid.innerHTML = `<p style="color:#fff;">스토리 데이터를 불러오지 못했습니다.</p>`;
+    grid.innerHTML = `<p class="grid-status">스토리 데이터를 불러오지 못했습니다.</p>`;
   }
 }
 
-document.addEventListener("DOMContentLoaded", renderReleases);
+// Script is loaded with `defer`, so the DOM is already parsed at this point.
+renderReleases();
