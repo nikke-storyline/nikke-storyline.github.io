@@ -240,7 +240,7 @@
     "release": "2022-12-29",
     "category": "BOND",
     "text": "모더니아",
-    "comment": "#마리안"
+    "comment": "#헬레틱"
   }, {
     "thumbnail": "images/chapter-19.webp",
     "release": "2023-01-12",
@@ -289,5 +289,59 @@
     "category": "BOND",
     "text": "자칼",
     "comment": "#이그조틱"
+  }, {
+    "thumbnail": "images/event-maid-in-valentine.webp",
+    "release": "2023-02-02",
+    "category": "EVENT",
+    "text": "MAID IN VALENTINE",
+    "comment": "#메이드포유"
+  }, {
+    "thumbnail": "images/nikke-soda.webp",
+    "release": "2023-02-02",
+    "category": "BOND",
+    "text": "소다",
+    "comment": "#메이드포유"
+  }, {
+    "thumbnail": "images/nikke-cocoa.webp",
+    "release": "2023-02-02",
+    "category": "BOND",
+    "text": "코코아",
+    "comment": "#메이드포유"
+  }, {
+    "thumbnail": "images/event-bow-wow-paradise.webp",
+    "release": "2023-03-16",
+    "category": "EVENT",
+    "text": "BOW WOW PARADISE",
+    "comment": "#해피주"
+  }, {
+    "thumbnail": "images/nikke-biscuit.webp",
+    "release": "2023-03-16",
+    "category": "BOND",
+    "text": "비스킷",
+    "comment": "#해피주"
+  }, {
+    "thumbnail": "images/nikke-nihilister.webp",
+    "release": "2023-03-30",
+    "category": "BOND",
+    "text": "니힐리스타",
+    "comment": "#헬레틱"
+  }, {
+    "thumbnail": "images/event-cherry-blossom.webp",
+    "release": "2023-03-30",
+    "category": "EVENT",
+    "text": "CHERRY BLOSSOM",
+    "comment": "#언더월드퀸"
+  }, {
+    "thumbnail": "images/nikke-sakura.webp",
+    "release": "2023-03-30",
+    "category": "BOND",
+    "text": "사쿠라",
+    "comment": "#언더월드퀸"
+  }, {
+    "thumbnail": "images/event-full-fool-day.webp",
+    "release": "2023-04-01",
+    "category": "EVENT",
+    "text": "FULL FOOL DAY",
+    "comment": "#만우절"
   }
 ]
